@@ -6,9 +6,19 @@ const cors = require("cors");
 const app = express();
 
 // ✅ FIXED HERE
+const cors = require("cors");
+
 app.use(cors({
- origin: "*",
+  origin: [
+    "http://localhost:5173",
+    "https://sankettambare.github.io"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
+
+app.use(express.json());
+
 
 
 app.use(express.json());
