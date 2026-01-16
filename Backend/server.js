@@ -7,10 +7,7 @@ const app = express();
 
 // ✅ FIXED HERE
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://binnay-task.netlify.app"
-  ]
+ origin: "*",
 }));
 
 
