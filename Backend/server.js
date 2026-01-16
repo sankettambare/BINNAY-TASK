@@ -7,9 +7,12 @@ const app = express();
 
 // ✅ FIXED HERE
 app.use(cors({
-  origin: "http://localhost:5173",
-  credentials: true
+  origin: [
+    "http://localhost:5173",
+    "https://binnay-task.netlify.app"
+  ]
 }));
+
 
 app.use(express.json());
 
@@ -23,4 +26,3 @@ app.use("/api/movies", require("./routes/movieRoutes"));
 app.listen(process.env.PORT || 5000, () =>
   console.log("Server running on port", process.env.PORT || 5000)
 );
-``
