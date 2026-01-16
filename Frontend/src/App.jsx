@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import AddMovie from "./pages/AddMovie";
 import ProtectedRoute from "./components/ProtectedRoute";
-import EditMovie from "./pages/EditMovie.JSX";
+import EditMovie from "./pages/EditMovie.jsx";
 import Register from "./Register";
 import Movies from "./pages/Movies";
 
