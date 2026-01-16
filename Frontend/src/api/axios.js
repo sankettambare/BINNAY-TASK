@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://binnay-task-backend.onrender.com/api",
+  baseURL: "https://binnay-task-1.onrender.com/api",
 });
+
 
 export default api;
